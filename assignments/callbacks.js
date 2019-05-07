@@ -58,7 +58,7 @@ multiplyNums(2, 14, logIt);
 function contains(item, list, cb) {
   return cb(list.includes(item));
 }
-contains("Gum", items, logIt);
+contains("Notebook", items, logIt);
 
 
 
