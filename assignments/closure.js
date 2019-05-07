@@ -1,6 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+const author = "jrrTolkien";
+const middleEarth = function() {
+  const elves = function() {
+    const legolas = function() {
+
+    }
+  }
+}
+
+// The variable "legolas" cannot be used outside of "elves", and "elves" cannot be used outside of "middleEarth". 
+// However, the variable "author"  can be used anywhere in the code because of where it was declared.
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
