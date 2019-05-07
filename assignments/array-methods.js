@@ -61,17 +61,30 @@ runners.forEach( person => fullName.push(`${person.first_name} ${person.last_nam
 
 console.log(fullName);
 
+
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runner's first names converted to uppercase because the director BECAME DRUNK WITH POWER. Convert each first name into all caps and log the result
-let allCaps = [];
-//Attempt 1
-// function convertToCaps(){
-//     runners.map(runners.toUpperCase(runners.first_name));
+
+//first
+
+// function convertToCaps (obj) {
+//    return obj.first_name.toUpperCase()
 // }
-//Attempt 2
+// let allCapsArray = runners.map(convertToCaps);
+// console.log(allCapsArray)
 
+//
 
-console.log(allCaps); 
+//second
+//                   PARAMETER => logic
+const convertToCaps = obj =>  obj.first_name.toUpperCase()
+let allCapsArray = runners.map(convertToCaps);
+console.log(allCapsArray)
+
+//
+
+//third
+
 
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.  Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
