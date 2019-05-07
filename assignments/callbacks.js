@@ -34,8 +34,7 @@ getLength(items, logIt);
 
 // last passes the last item of the array into the callback.
 function last(arr, cb) {
-  // return cb(arr[i] = arr.length - 1);
-  return  
+  return  cb(arr[arr.length - 1]);
 }
 last(items, logIt);
 
