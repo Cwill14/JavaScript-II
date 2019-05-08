@@ -109,8 +109,8 @@ console.log(largeShirts);
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations into a ticketPriceTotal array and log the result
 
 
-let ticketPriceTotal = runners.reduce((total, obj) => {
-    return total + obj.donation;
+let ticketPriceTotal = runners.reduce((total, x) => {  // I don't know what to name second cb param, don't fully understand
+    return total + x.donation;
 }, 0);
 console.log(ticketPriceTotal);
 
@@ -118,7 +118,27 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+//get a list of the people that work at kwimbee
+const kwimbeeWorkers = runners.filter(person => person.company_name === "Kwimbee");
+console.log(kwimbeeWorkers);
+
 
 // Problem 2
+// sort last names alphabetically
+
+// //              1 (not working)
+// let sortedList = [];
+// runners.forEach(function(name) {
+//     ;
+//     sortedList.push(name.last_name);
+// });
+// console.log(sortedList);
+ 
+//                2
+function sortNames(names) {
+    return names.last_name.sort();
+}
+let sortedNames = runners.map(sortNames);
+console.log(sortedNames);
 
 // Problem 3
