@@ -55,11 +55,9 @@ const runners = [{"id":1,"first_name":"Charmain","last_name":"Seiler","email":"c
 
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs.  Combine both the first and last names into a new array called fullName. 
-// let fullName = [];
-
-// runners.forEach( person => fullName.push(`${person.first_name} ${person.last_name}`));
-
-// console.log(fullName);
+let fullName = [];
+runners.forEach( person => fullName.push(`${person.first_name} ${person.last_name}`));
+console.log(fullName);
 
 
 // ==== Challenge 2: Use .map() ====
@@ -125,27 +123,24 @@ console.log(kwimbeeWorkers);
 
 // Problem 2
 // sort last names alphabetically
-
-// //              1 (not working)
-// let sortedList = [];
-// runners.forEach(function(name) {
-//     ;
-//     sortedList.push(name.last_name);
-// });
-// console.log(sortedList);
  
-//                2 (also not working)
 // function sortNames(names) {
+    
 //     return names.last_name.sort();
 // }
 // let sortedNames = runners.map(sortNames);
 // console.log(sortedNames);
 
+function
+console.log(sortedNames);
+
+
+
 // Problem 3
 // give a list of the the full names and emails of the runners
-//                    NOTE: DOESN'T WORK WHEN CHALLENGE 1 IS NOT COOMMENTED OUT
+//                   
+//                              .forEach();
 
-//           .forEach();
 // let emailList = [];
 // function getEmailList(person) {
 //     emailList.push(`${person.first_name} ${person.last_name}: ${person.email}`);
@@ -153,7 +148,7 @@ console.log(kwimbeeWorkers);
 // runners.forEach(getEmailList);
 // console.log(emailList);
 
-//          .map();
+//                                 .map();
 
 let newEmailList = runners.map(person => `${person.first_name} ${person.last_name}: ${person.email}`);
 console.log(newEmailList);
